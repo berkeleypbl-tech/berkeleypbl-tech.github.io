@@ -11,26 +11,26 @@
 
 	// list of days, then time slots per day, then people per time slot
 
-	var json = [[["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"]],
-	[["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"]],
-	[["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"]],
-	[["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"]],
-	[["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"],
-	["Meejin Choi", "Meejin Choi", "Meejin Choi", "Meejin Choi"]]];
+	var json = [[["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"]],
+	[["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"]],
+	[["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"]],
+	[["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"]],
+	[["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"],
+	["Jackie Zhang", "Jackie Zhang", "Jackie Zhang", "Jackie Zhang"]]];
 
 	$.each(json, function(i) { // loops through each day
 		$.each(this, function(j) { // loops through each time slot in each day
@@ -71,7 +71,7 @@
 			var table1 = $(this).parent().parent().parent();
 			var table2 = $(this).parent().parent();
 			var verTable = $(table1).data('vertable')+"";
-			var column = $(this).data('column') + ""; 
+			var column = $(this).data('column') + "";
 
 			$(table2).find("."+column).addClass('hov-column-'+ verTable);
 			$(table1).find(".row100.head ."+column).addClass('hov-column-head-'+ verTable);
@@ -84,12 +84,12 @@
 			var table1 = $(this).parent().parent().parent();
 			var table2 = $(this).parent().parent();
 			var verTable = $(table1).data('vertable')+"";
-			var column = $(this).data('column') + ""; 
+			var column = $(this).data('column') + "";
 
 			$(table2).find("."+column).removeClass('hov-column-'+ verTable);
 			$(table1).find(".row100.head ."+column).removeClass('hov-column-head-'+ verTable);
 		}
 	});
-    
+
 
 })(jQuery);
