@@ -46,7 +46,7 @@
 		});
 	});
 
-	var hrefs = [$('.input_button').attr('href'), 'https://goo.gl/forms/elEmOKavGFXGk2QF3'];
+	var hrefs = [$('.input_button').attr('href'), 'https://goo.gl/forms/XYqYQY3BmUsDlzHE3'];
 	$(window).on('resize', function() {
 		$('.input_button').attr('href', function() {
 			return hrefs[$(window).width() > 737 ? 0 : 1];
@@ -54,7 +54,7 @@
 	}).trigger('resize');
 
 
-	var hrefxs = [$('.swap_button').attr('href'), 'https://goo.gl/forms/nmjSGBXmHgyE65Rm1'];
+	var hrefxs = [$('.swap_button').attr('href'), 'https://goo.gl/forms/WpOHMm5Ls3tIeEOM2'];
 	$(window).on('resize', function() {
 		$('.swap_button').attr('href', function() {
 			return hrefxs[$(window).width() > 737 ? 0 : 1];
