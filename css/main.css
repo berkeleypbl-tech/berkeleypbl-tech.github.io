@@ -77,7 +77,8 @@ button:hover {
 }
 
 iframe {
-	border: none !important;
+	position: absolute;
+  margin-top: 100px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Stuff ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
