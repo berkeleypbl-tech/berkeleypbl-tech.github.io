@@ -117,8 +117,6 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
-  overflow-x: scroll; 
-  -webkit-overflow-scrolling:touch;
 }
 
 .container-table100 {
@@ -131,7 +129,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-wrap: wrap;
   padding: 33px 30px;
 }
 
@@ -174,7 +172,8 @@ th, td {
 /*[ Ver6 ]*/
 .table100.ver6 {
   border-radius: 16px;
-  overflow: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   background-color: #fff;
 }
 
@@ -216,6 +215,9 @@ th, td {
   background-color: #FFBF00;
   color: #fff;
 }
+
+/* FOR MOBILE */
+
 
 /* FOR MODAL */
 .modal_button {
@@ -298,7 +300,7 @@ th, td {
     z-index: 50;
     position: fixed;
     color: #aaa;
-    right: 27.5%;
+    right: 15%;
     font-size: 28px;
     font-weight: bold;
     transition: all 0.5s linear;
