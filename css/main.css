@@ -117,7 +117,7 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
-  overflow-x:scroll; 
+  overflow-x: scroll; 
   -webkit-overflow-scrolling:touch;
 }
 
@@ -131,7 +131,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+
   padding: 33px 30px;
 }
 
@@ -273,8 +273,8 @@ th, td {
     margin: 8.5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
-    height: 77.5%;
+    width: 75%;
+    height: auto;
     overflow: auto;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
@@ -288,7 +288,6 @@ th, td {
 
 .setup-title p{
   margin: auto;
-  padding-top: 20px;
   font-family: Montserrat-Medium;
   line-height: 1.4;
   font-size: 25px;
