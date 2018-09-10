@@ -66,6 +66,7 @@ textarea:focus, input:focus {
 }
 
 /* ------------------------------------ */
+
 button {
 	outline: none !important;
 	border: none;
@@ -116,6 +117,8 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+  overflow-x:scroll; 
+  -webkit-overflow-scrolling:touch;
 }
 
 .container-table100 {
@@ -212,4 +215,144 @@ th, td {
 .table100.ver6 .row100 td:hover {
   background-color: #FFBF00;
   color: #fff;
+}
+
+/* FOR MODAL */
+.modal_button {
+  transition: all 0.5s linear;
+  display: flex;
+  display: -webkit-flex; 
+  margin: auto;
+  height: 50px;
+  width: 250px;
+  background-color: #002933;
+  color: #fff;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.modal_button p {
+  margin: auto;
+  font-family: Montserrat-Medium;
+  line-height: 1.4;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.modal_button:hover {
+  color: #78909C;
+  cursor: pointer;
+}
+
+
+
+/* popup */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 8.5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 77.5%;
+    overflow: auto;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.modal-content p {
+  font-size: 14px;
+}
+
+.setup-title p{
+  margin: auto;
+  padding-top: 20px;
+  font-family: Montserrat-Medium;
+  line-height: 1.4;
+  font-size: 25px;
+  text-align: center;
+}
+/* The Close Button */
+.close {
+    z-index: 50;
+    position: fixed;
+    color: #aaa;
+    right: 27.5%;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.5s linear;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* MODAL ANIMATIONS */
+@-webkit-keyframes zoomIn { /* for safari */
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
