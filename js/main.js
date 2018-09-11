@@ -11,12 +11,11 @@
 
 	// list of days, then time slots per day, then people per time slot
 
-	var json = [[["Lorenzo Dela Cruz", "Simran Regmi"], ["Austin Kim", "Taylor Wang", "Raina Yang"], ["William Jiang", "Darren Kim", "Claire Yoon"], ["Chloe Lin", "Mervi Tan", "Ethan Chiu"]], 
-	[["Jackie Hu", "Max Larsen", "Keshav Pabbisetty", "Eunice Cheung"], ["Shaylene Liao", "Junru Lyu", "Ciecie Chen"], ["Alex Park AP", "Alice Chen"], ["Anthony Chen", "Chris Ding", "Zen Thunparkkul"]], 
-	[["Hermes Ip", "Carl Qi"], ["Caroline Chen", "Abby Tan"], ["Yusuf Yamani", "Bryan Huang"], ["Kristina Lee", "Matthew Huang"]], 
-	[["Corey Gibbel", "Amit Pampati"], ["Ankur Singh", "Tiffany Vo", "Gurshaan Bariana"], ["Max Wang", "Vincent Tantra"], ["Alan Dai", "Jiyi Jung"]], 
+	var json = [[["Lorenzo Dela Cruz", "Simran Regmi"], ["Austin Kim", "Taylor Wang", "Raina Yang"], ["William Jiang", "Darren Kim", "Claire Yoon"], ["Chloe Lin", "Mervi Tan", "Ethan Chiu"]],
+	[["Jackie Hu", "Max Larsen", "Keshav Pabbisetty", "Eunice Cheung"], ["Shaylene Liao", "Junru Lyu", "Ciecie Chen"], ["Alex Park AP", "Alice Chen"], ["Anthony Chen", "Chris Ding", "Zen Thunparkkul"]],
+	[["Hermes Ip", "Carl Qi"], ["Caroline Chen", "Abby Tan"], ["Yusuf Yamani", "Bryan Huang"], ["Kristina Lee", "Matthew Huang"]],
+	[["Corey Gibbel", "Amit Pampati"], ["Ankur Singh", "Tiffany Vo", "Gurshaan Bariana"], ["Max Wang", "Vincent Tantra"], ["Alan Dai", "Jiyi Jung"]],
 	[["Alex Park", "Ryan Chiem", "Jacqueline Cai"], ["Nancy Chen", "Eric Wang"], ["Timothy Huang", "Keilyn Yuzuki", "Julia Lu"], ["Jacqueline Zhang", "Rishi Modi", "Mia Karimabadi"]]];
-	
 	$.each(json, function(i) { // loops through each day
 		$.each(this, function(j) { // loops through each time slot in each day
 			var slot = slots[i][j];
