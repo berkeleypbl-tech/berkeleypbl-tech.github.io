@@ -267,7 +267,7 @@ th, td {
     animation-name: fadeIn;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
-    overflow-x: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
 
