@@ -7,16 +7,12 @@
 					["tue10", "tue11", "tue12", "tue1"],
 					["wed10", "wed11", "wed12", "wed1"],
 					["thu10", "thu11", "thu12", "thu1"],
-					["fri10", "fri11", "fri12", "fri1"]];
+					];
 
 	// list of days, then time slots per day, then people per time slot
 
-	var json = [[["Lorenzo Dela Cruz", "Simran Regmi"], ["Austin Kim", "Taylor Wang", "Raina Yang"], ["William Jiang", "Darren Kim", "Claire Yoon"], ["Chloe Lin", "Mervi Tan", "Ethan Chiu"]],
-	[["Jackie Hu", "Max Larsen", "Keshav Pabbisetty", "Eunice Cheung"], ["Shaylene Liao", "Junru Lyu", "Ciecie Chen"], ["Alex Park AP", "Alice Chen"], ["Anthony Chen", "Chris Ding", "Zen Thunparkkul"]],
-	[["Hermes Ip", "Carl Qi"], ["Caroline Chen", "Abby Tan"], ["Yusuf Yamani", "Bryan Huang"], ["Kristina Lee", "Matthew Huang"]],
-	[["Corey Gibbel", "Amit Pampati"], ["Ankur Singh", "Tiffany Vo", "Gurshaan Bariana"], ["Max Wang", "Vincent Tantra"], ["Alan Dai", "Jiyi Jung"]],
-	[["Alex Park", "Ryan Chiem", "Jacqueline Cai"], ["Nancy Chen", "Eric Wang"], ["Timothy Huang", "Keilyn Yuzuki", "Julia Lu"], ["Jacqueline Zhang", "Rishi Modi", "Mia Karimabadi"]]];
-	$.each(json, function(i) { // loops through each day
+	var json = [[["Lorenzo Dela Cruz", "Jackie Hu", "Amit Pampati"], ["Rishi Modi", "Alex Park AP", "Simran Regmi"], ["Taylor Wang", "William Jiang", "Eric Wang", "Julia Lu"], ["Jacqueline Zhang", "Ryan Chiem", "Mervi Tan"]], [["Corey Gibbel", "Max Larsen", "Zen Thunparkkul"], ["Shaylene Liao", "Junru Lyu", "Carl Qi", "Vincent Tantra"], ["Max Wang", "Jiyi Jung", "Alice Chen", "Austin Kim"], ["Alex Park", "Ethan Chiu", "Chris Ding"]], [["Hermes Ip", "Darren Kim", "Raina Yang"], ["Yusuf Yamani", "Claire Yoon", "Abby Tan"], ["Caroline Chen", "Eunice Cheung", "Keilyn Yuzuki"], ["Kristina Lee", "Matthew Huang"]], [["Anthony Chen", "Keshav Pabbisetty", "Mia Karimabadi"], ["Nancy Chen", "Tiffany Vo", "Gurshaan Bariana", "Ciecie Chen"], ["Ankur Singh", "Chloe Lin", "Jacqueline Cai"], ["Timothy Huang", "Alan Dai", "Bryan Huang"]]];
+		$.each(json, function(i) { // loops through each day
 		$.each(this, function(j) { // loops through each time slot in each day
 			var slot = slots[i][j];
 			var slotclass = "ul" + slot;
