@@ -26,7 +26,7 @@
 		});
 	});
 
-	var hrefs = [$('.input_button').attr('href'), 'https://goo.gl/forms/XYqYQY3BmUsDlzHE3'];
+	var hrefs = [$('.input_button').attr('href'), 'https://goo.gl/forms/cSLj0m86LsK3duiE3'];
 	$(window).on('resize', function() {
 		$('.input_button').attr('href', function() {
 			return hrefs[$(window).width() > 737 ? 0 : 1];
