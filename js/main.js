@@ -26,7 +26,7 @@
 		});
 	});
 
-	var hrefs = [$('.input_button').attr('href'), 'https://goo.gl/forms/TscByCeMSJEE6p1y1'];
+	var hrefs = [$('.input_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLSfpjEQZYNVwTj3U3LycqvpxaQKfOiuZ9NTwL7V1LxkXksCqCA/viewform?usp=sf_link'];
 	$(window).on('resize', function() {
 		$('.input_button').attr('href', function() {
 			return hrefs[$(window).width() > 737 ? 0 : 1];
