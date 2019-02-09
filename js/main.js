@@ -34,7 +34,7 @@
 	}).trigger('resize');
 
 
-	var hrefxs = [$('.swap_button').attr('href'), 'https://goo.gl/forms/WpOHMm5Ls3tIeEOM2'];
+	var hrefxs = [$('.swap_button').attr('href'), 'https://goo.gl/forms/DuxofkysDX9ftS7q2'];
 	$(window).on('resize', function() {
 		$('.swap_button').attr('href', function() {
 			return hrefxs[$(window).width() > 737 ? 0 : 1];
