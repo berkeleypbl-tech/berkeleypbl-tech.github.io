@@ -7,11 +7,12 @@
 					["tue10", "tue11", "tue12", "tue1"],
 					["wed10", "wed11", "wed12", "wed1"],
 					["thu10", "thu11", "thu12", "thu1"],
+					["fri10", "fri11", "fri12", "fri1"], // Comment out this line to remove Fridays
 					];
 
 	// list of days, then time slots per day, then people per time slot
 
-	var json = [[["Max Larsen", "Emily Jin", "Grace Chi", "Yookyeong Kim"], ["Max Wang", "Kira Guo", "Sehee Park", "Dylan Asprer"], ["Samantha Fang", "James Tang"], ["Nicholas Paul", "Tiffany Chung", "Hermes Ip", "Janathan Zhao"]], [["Alan Dai", "Michelle Lin", "Roger Zhang", "Henry Cheong"], ["Carl Qi", "Brenton Law", "Ryan Rashid", "Jackie Cai"], ["Austin Kim", "Vincent Chiang", "Zen Thunparkkul", "Stella Kim"], ["Rena Song", "Jennie Kim"]], [["Anthony Chen", "Guneesha Sawhney", "Kate Ngo", "Kai Chen"], ["Cynthia Luan", "Claire Yoon", "Caroline Chen", "Charles Van"], ["Alice Chen", "Carrington Park", "William Jiang", "Ellie Min"], ["Jackie Hu", "Arash Nassirinia", "Abby Tan"]], [["Corey Gibbel", "Lucy Liu", "Jessica Li", "Jeremy Mui"], ["Darren Kim", "Kristy Kao", "Lisa Son", "Junru Lyu"], ["Emily Zhu", "Conor Richard", "Ria Verma"], ["Shalandy Zhang", "Rachit Pareek", "Jessica Wang", "Riddhi Bagadiaa"]]];		
+	var json = [[['Emily Zhu', 'Patricia Tse', 'George Lee'], ['Junru Lyu', 'Christine Liu', 'Kai Chen'], ['Jeremy Mui', 'Brandy Nguyen', 'Roger Zhang', 'Corey Gibbel'], ['Claire Yoon', 'Amy Zhong', 'Grace Li']], [['Henry Cheong', 'Justin Quan', 'Brenton Law'], ['Kristy Kao', 'Priscilla Chang', 'Christine Oh', 'Jenny Bong'], ['Grace Chi', 'Janet Xu', 'Monica Zhang'], ['Conor Richard', 'Chloe Guo', 'Erika Yang']], [['Tiffany Chung', 'Max Larsen', 'Celine Birkl', 'Kaci Gu'], ['Carrington Park', 'David Wang', 'Sydney Ty'], ['Sehee Park', 'Vaibhav Gattani', 'Samantha Fang'], ['Stella Kim', 'Angela Jiang', 'Bradley Wei']], [['Emily Jin', 'Ethan Yoon', 'Vien Yen Ho Pham'], ['Nicholas Paul', 'Hitansh Nagdev', 'Khoa Pham'], ['Anthony Chen', 'Kate Ngo', 'Nina Tagliabue'], ['Alan Dai', 'Cathy Zhang', 'Margaret Lee', 'Sarah Shin']], [['Carl Qi', 'Hannah Shever', 'Michelle Lin'], ['Jackie Hu', 'Darren Kim', 'Charles Van', 'Jacqueline Zhang'], ['Cyssi Ngo', 'Autumn Wang', 'Tiffany Feng', 'Tarun Sreedhar'], ['Alice Chen', 'Dylan Asprer', 'Dennis Pham']]];
 		$.each(json, function(i) { // loops through each day
 		$.each(this, function(j) { // loops through each time slot in each day
 			var slot = slots[i][j];
