@@ -88,7 +88,7 @@ img.favicon {
 	margin-right: 10px;
 	height: 35px;
 	width: 35px;
-	padding-bottom: 4px;	
+	padding-bottom: 4px;
 }
 h1{
 	font-weight: 300;
@@ -144,7 +144,7 @@ section{
 		padding: 0 1.5em;
 	}
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	.container{
@@ -176,7 +176,7 @@ section{
 		margin-right: 20px;
 	}
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	body{
@@ -191,7 +191,7 @@ section{
 		-webkit-transition: all .3s ease;
 	}
 	input[type="checkbox"]:checked + nav{
-		height: 205px;
+		height: 125px;
 	}
 	nav>a{
 		padding: 0 1em;
@@ -209,5 +209,4 @@ section{
 	.hidden-desktop{
 		display: block;
 	}
-} 
-
+}
