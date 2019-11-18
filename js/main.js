@@ -12,20 +12,20 @@
 
 	// list of days, then time slots per day, then people per time slot
 
-	// var json = [[['Nicholas Paul', 'George Lee', 'Hannah Shever'], ['Kai Chen', 'Jenny Bong', 'Junru Lyu'], ['Jacqueline Zhang', 'Ethan Yoon', 'Erika Yang'], ['Henry Cheong', 'Angela Jiang', 'Sydney Ty']], [['Emily Jin', 'David Wang', 'Monica Zhang', 'Celine Birkl'], ['Corey Gibbel', 'Christine Liu', 'Janet Xu', 'Kristy Kao'], ['Alan Dai', 'Priscilla Chang', 'Kate Ngo', 'Amy Zhong'], ['Claire Yoon', 'Dennis Pham', 'Tarun Sreedhar', 'Emily Zhu']], [['Tiffany Chung', 'Kaci Gu', 'Max Larsen'], ['Carrington Park', 'Roger Zhang', 'Hitansh Nagdev', 'Jackie Hu'], ['Sehee Park', 'Dylan Asprer', 'Samantha Fang', 'Cyssi Ngo'], ['Alice Chen', 'Grace Li', 'Vaibhav Gattani']], [['Anthony Chen', 'Patricia Tse', 'Stella Kim'], ['Brenton Law', 'Vien Yen Ho Pham', 'Bradley Wei'], ['Jeremy Mui', 'Nina Tagliabue', 'Khoa Pham'], ['Grace Chi', 'Sarah Shin', 'Margaret Lee']], [['Carl Qi', 'Chloe Guo', 'Autumn Wang'], ['Darren Kim', 'Justin Quan', 'Cathy Zhang'], ['Michelle Lin', 'Tiffany Feng', 'Conor Richard'], ['Charles Van', 'Christine Oh', 'Brandy Nguyen']]];
-	// 	$.each(json, function(i) { // loops through each day
-	// 	$.each(this, function(j) { // loops through each time slot in each day
-	// 		var slot = slots[i][j];
-	// 		var slotclass = "ul" + slot;
-	// 		var slotobject = $("td." + slot);
-	// 		var temp = $("<ul/>").addClass(slotclass).appendTo(slotobject);
-	// 		var ul = $("ul." + slotclass);
-	// 		$.each(this, function() { // loops through each person in each time slot
-	// 			var li = $("<li/>").appendTo(ul);
-	//     		var a = $("<a/>").text(this).appendTo(li);
-	// 		});
-	// 	});
-	// });
+	var json = [[['Nicholas Paul', 'George Lee', 'Hannah Shever'], ['Kai Chen', 'Jenny Bong', 'Junru Lyu'], ['Jacqueline Zhang', 'Ethan Yoon', 'Erika Yang'], ['Henry Cheong', 'Angela Jiang', 'Sydney Ty']], [['Emily Jin', 'David Wang', 'Monica Zhang', 'Celine Birkl'], ['Corey Gibbel', 'Christine Liu', 'Janet Xu', 'Kristy Kao'], ['Alan Dai', 'Priscilla Chang', 'Kate Ngo', 'Amy Zhong'], ['Claire Yoon', 'Dennis Pham', 'Tarun Sreedhar', 'Emily Zhu']], [['Tiffany Chung', 'Kaci Gu', 'Max Larsen'], ['Carrington Park', 'Roger Zhang', 'Hitansh Nagdev', 'Jackie Hu'], ['Sehee Park', 'Dylan Asprer', 'Samantha Fang', 'Cyssi Ngo'], ['Alice Chen', 'Grace Li', 'Vaibhav Gattani']], [['Anthony Chen', 'Patricia Tse', 'Stella Kim'], ['Brenton Law', 'Vien Yen Ho Pham', 'Bradley Wei'], ['Jeremy Mui', 'Nina Tagliabue', 'Khoa Pham'], ['Grace Chi', 'Sarah Shin', 'Margaret Lee']], [['Carl Qi', 'Chloe Guo', 'Autumn Wang'], ['Darren Kim', 'Justin Quan', 'Cathy Zhang'], ['Michelle Lin', 'Tiffany Feng', 'Conor Richard'], ['Charles Van', 'Christine Oh', 'Brandy Nguyen']]];
+		$.each(json, function(i) { // loops through each day
+		$.each(this, function(j) { // loops through each time slot in each day
+			var slot = slots[i][j];
+			var slotclass = "ul" + slot;
+			var slotobject = $("td." + slot);
+			var temp = $("<ul/>").addClass(slotclass).appendTo(slotobject);
+			var ul = $("ul." + slotclass);
+			$.each(this, function() { // loops through each person in each time slot
+				var li = $("<li/>").appendTo(ul);
+	    		var a = $("<a/>").text(this).appendTo(li);
+			});
+		});
+	});
 
 	var hrefs = [$('.input_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLSfpjEQZYNVwTj3U3LycqvpxaQKfOiuZ9NTwL7V1LxkXksCqCA/viewform?usp=sf_link'];
 	$(window).on('resize', function() {
@@ -35,7 +35,7 @@
 	}).trigger('resize');
 
 
-	var hrefxs = [$('.swap_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLSccfnH-oIyn13sSLN5yLBAzdwmPcb-ge5IBNIwMV4754-u1sQ/viewform'];
+	var hrefxs = [$('.swap_button').attr('href'), 'https://goo.gl/forms/DuxofkysDX9ftS7q2'];
 	$(window).on('resize', function() {
 		$('.swap_button').attr('href', function() {
 			return hrefxs[$(window).width() > 737 ? 0 : 1];
