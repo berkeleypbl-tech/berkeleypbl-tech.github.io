@@ -27,7 +27,7 @@
 		});
 	});
 
-	var hrefs = [$('.input_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLSfpjEQZYNVwTj3U3LycqvpxaQKfOiuZ9NTwL7V1LxkXksCqCA/viewform?usp=sf_link'];
+	var hrefs = [$('.input_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLScfsoHk29eNSlKUCk-koM-eFFeQy0npxTQA_EBxRcidOT5rLQ/viewform'];
 	$(window).on('resize', function() {
 		$('.input_button').attr('href', function() {
 			return hrefs[$(window).width() > 737 ? 0 : 1];
@@ -35,7 +35,7 @@
 	}).trigger('resize');
 
 
-	var hrefxs = [$('.swap_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLSccfnH-oIyn13sSLN5yLBAzdwmPcb-ge5IBNIwMV4754-u1sQ/viewform'];
+	var hrefxs = [$('.swap_button').attr('href'), 'https://docs.google.com/forms/d/e/1FAIpQLSe881a8edKTs1_4AaWM8SiZIVoRPth8ZmA4n8Ps-VhHR95YtQ/viewform'];
 	$(window).on('resize', function() {
 		$('.swap_button').attr('href', function() {
 			return hrefxs[$(window).width() > 737 ? 0 : 1];
