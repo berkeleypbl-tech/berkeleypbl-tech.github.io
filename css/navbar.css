@@ -45,8 +45,6 @@ header{
 }
 .header-left{
 	width: 30%;
-	font-family: Garamond;
-  	/*src: url('../fonts/montserrat/Montserrat-Regular.ttf'); */
 }
 .header-right label{
 	position: absolute;
